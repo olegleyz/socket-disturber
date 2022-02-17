@@ -44,8 +44,8 @@ def main():
         print ("Socket created. Start sending messages")
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         print ("Destination: {}:{}".format(args.IP,args.port))
-        print ("Message size: {} kb. Number of threads: {}").\
-            format(args.size, args.threads)
+        print ("Message size: {} kb. Number of threads: {}".\
+            format(args.size, args.threads))
         print("\nCtrl+C to break")
         
         while(1):
@@ -68,7 +68,7 @@ if __name__ == '__main__':
             below. 
             """
         example_of_use = """ 
-                Set the IP and port: python switch_disturber.py -i 192.168.1.50 -p 60001
+                Set the IP and port: python socket-disturber.py -i 192.168.1.50 -p 60001
             """
         parser = argparse.ArgumentParser \
             ( formatter_class=argparse.ArgumentDefaultsHelpFormatter
