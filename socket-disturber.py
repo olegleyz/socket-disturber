@@ -68,7 +68,7 @@ if __name__ == '__main__':
             below. 
             """
         example_of_use = """ 
-                Set the IP and port: python switch_disturber.py -i 192.168.1.50 -p 60001
+                Set the IP and port: python socket-disturber.py -i 192.168.1.50 -p 60001
             """
         parser = argparse.ArgumentParser \
             ( formatter_class=argparse.ArgumentDefaultsHelpFormatter
